@@ -10,3 +10,13 @@
 # 1234
 
 # TODO: your code here
+
+num = int(input("Введите ваше число:"))
+
+start_num = 1
+fin_sum = ""
+
+while start_num <= num:
+    fin_sum = (fin_sum+str(start_num))
+    start_num = start_num + 1
+print(fin_sum)
