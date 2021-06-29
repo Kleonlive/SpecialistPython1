@@ -5,3 +5,12 @@
 # Для всех остальных случаев не выводить ничего.
 
 # TODO: your code here
+
+num = int(input("Введите Ваше число: "))
+
+if num % 3 == 0 and num % 5 == 0:
+    print("Foobar")
+elif num % 3 == 0:
+    print("Foo")
+elif num % 5 == 0:
+    print("Bar")
