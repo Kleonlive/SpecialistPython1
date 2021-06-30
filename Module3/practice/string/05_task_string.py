@@ -6,3 +6,11 @@
 
 # TODO: your code here
 
+text = input("Введите ваш текст:")
+
+new_text = text.replace(" ", "")
+if new_text == new_text[ : : -1]:
+    print("Является")
+else:
+    print("Не является")
+
