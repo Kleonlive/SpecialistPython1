@@ -3,3 +3,13 @@
 # Получить и вывести на экран список координат y для данного уравнения прямой.
 
 # TODO: your code here
+
+x_coord = [-2,-1,0,1,2,3,4,5,6,7]
+
+y_coord = []
+
+for coord in x_coord:
+    y = 2*coord-4
+    y_coord.append(y)
+
+print(y_coord)
