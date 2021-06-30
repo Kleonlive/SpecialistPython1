@@ -2,3 +2,12 @@
 # Вывести на экран сумму всех элементов.
 
 # TODO: your code here
+
+my_list = []
+
+list_sum = 0
+
+for el in my_list:
+    list_sum = list_sum + el
+
+print(list_sum)
