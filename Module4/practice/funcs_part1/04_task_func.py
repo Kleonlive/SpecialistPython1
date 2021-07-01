@@ -3,10 +3,16 @@
 
 def can_triangle(p1, p2, p3):
     # TODO: your code here
+    if p1[0] == p2[0] == p3[0] or p1[1] == p2[1] == p3[1]:
+        return False
+    return True
     pass
 
 
 # Пример вызова функции
-can_triangle((10, 12), (14, 18), (12, 12))
+if can_triangle((10, 12), (14, 18), (12, 12)):
+    print("Yes")
+else:
+    print("No")
 
 # Не забудьте протестировать вашу функцию
