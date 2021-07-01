@@ -3,7 +3,29 @@
 # Если по заданным точкам треугольник построить нельзя, выведите соответствующее сообщение.
 # Подсказка: для нахождения площади используйте Теорему Герона
 
-# TODO: your code here
+
+import math
 
 
+def distance(p1, p2):
+    return math.sqrt(((p2[0] - p1[0]) ** 2) + ((p2[1] - p1[1]) ** 2))
+
+
+def can_triangle(p1, p2, p3):
+    if p1[0] == p2[0] == p3[0] or p1[1] == p2[1] == p3[1]:
+        return False
+    return True
+    pass
+
+
+p1 = (10, 12)
+p2 = (14, 18)
+p3 = (12, 12)
+
+if can_triangle(p1, p2, p3):
+    print("Периметр:", distance(p1, p2)+distance(p2, p3)+distance(p1, p3))
+else:
+    print("Не треугольник")
+    
+#площадь - TBD
 # Не забудьте протестировать вашу функцию
